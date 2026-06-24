@@ -3,93 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malerfirma ZEISS GmbH | Ihr Partner in Dresden</title>
-    <meta name="description" content="Malerfirma ZEISS GmbH in Dresden. Zuverlässige und professionelle Malerarbeiten für Gewerbe und Privat.">
-    <link rel="stylesheet" href="style.css">
+    <title>Website-Entwürfe | Kunden Demos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --card-bg: #1e293b;
+            --card-hover: #334155;
+            --accent: #3b82f6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            color: #94a3b8;
+        }
+
+        h1 span {
+            font-weight: 600;
+            color: white;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: var(--card-hover);
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: 600;
+        }
+
+        .card p {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">ZEISS <span>GmbH</span></div>
-        <nav>
-            <a href="#leistungen">Leistungen</a>
-            <a href="#vorteile">Warum wir?</a>
-            <a href="#kontakt" class="btn-accent">Jetzt anfragen</a>
-        </nav>
-    </header>
+    <div class="container">
+        <h1><span>Kunden</span>-Entwürfe</h1>
+        
+        <div class="grid">
+            <a href="malerfirma-zeiss/" class="card">
+                <div class="card-icon">🎨</div>
+                <h2>Malerfirma ZEISS</h2>
+                <p>Malerarbeiten & Fassadengestaltung</p>
+            </a>
 
-    <section class="hero">
-        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
-        <div class="hero-content">
-            <div class="accent-line"></div>
-            <h1>PRÄZISION IN FARBE.</h1>
-            <p>Leistungsstarke Malerarbeiten für Dresden und Umgebung.</p>
-            <a href="#kontakt" class="btn-accent btn-large">Projekt besprechen</a>
-        </div>
-    </section>
+            <a href="raumdesign-bendlin/" class="card">
+                <div class="card-icon">🛋️</div>
+                <h2>Raumdesign Bendlin</h2>
+                <p>Raumgestaltung & Bodenbeläge</p>
+            </a>
 
-    <section id="leistungen" class="services">
-        <div class="container">
-            <h2>UNSERE LEISTUNGEN</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div class="card-header">01</div>
-                    <h3>Fassadengestaltung</h3>
-                    <p>Wetterfester Schutz und repräsentative Optik für Ihr Gebäude.</p>
-                </div>
-                <div class="service-card">
-                    <div class="card-header">02</div>
-                    <h3>Innenraum-Konzepte</h3>
-                    <p>Vom Bürokomplex bis zum Eigenheim: Saubere und schnelle Umsetzung.</p>
-                </div>
-                <div class="service-card">
-                    <div class="card-header">03</div>
-                    <h3>Spezialbeschichtungen</h3>
-                    <p>Industrieböden, Brandschutz und funktionale Anstriche vom Profi.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <a href="holzgestaltung-buschbeck/" class="card">
+                <div class="card-icon">🪚</div>
+                <h2>Holzgestaltung Buschbeck</h2>
+                <p>Maßgefertigte Möbel & Innenausbau</p>
+            </a>
 
-    <section id="vorteile" class="benefits">
-        <div class="container">
-            <div class="benefit-box">
-                <h2>KOMPROMISSLOSE QUALITÄT</h2>
-                <p>Die Malerfirma ZEISS GmbH steht für Termintreue und höchste Standards. Wir setzen auf modernste Techniken und langlebige Materialien, um Ihr Projekt effizient zum Erfolg zu führen.</p>
-            </div>
+            <a href="ewerker-elektrotechnik/" class="card">
+                <div class="card-icon">⚡</div>
+                <h2>E-werker Elektrotechnik</h2>
+                <p>Smart Home & Hausinstallationen</p>
+            </a>
         </div>
-    </section>
-
-    <section id="kontakt" class="contact">
-        <div class="container contact-container">
-            <div class="contact-text">
-                <h2>KONTAKT</h2>
-                <p>Wir sind für Sie da. Fordern Sie jetzt Ihr unverbindliches Angebot an.</p>
-            </div>
-            <div class="contact-details">
-                <div class="detail-item">
-                    <span class="label">Standort</span>
-                    <span class="value">Königsbrücker Landstr. 253<br>01108 Dresden</span>
-                </div>
-                <div class="detail-item">
-                    <span class="label">Telefon</span>
-                    <a href="tel:01713521430" class="value">0171 3521430</a>
-                </div>
-                <div class="detail-item">
-                    <span class="label">E-Mail</span>
-                    <a href="mailto:maler-zeiss.gmbh@gmx.de" class="value text-accent">maler-zeiss.gmbh@gmx.de</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-flex">
-            <div class="logo">ZEISS <span>GmbH</span></div>
-            <div class="copyright">&copy; 2026 Malerfirma ZEISS GmbH</div>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
