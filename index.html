@@ -3,182 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website-Entwürfe | Kunden Demos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Kunden Demos | Premium Webdesign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --text-color: #f8fafc;
-            --card-bg: #1e293b;
-            --card-hover: #334155;
-            --accent: #3b82f6;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            padding: 2rem;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 3rem;
-            color: #94a3b8;
-        }
-
-        h1 span {
-            font-weight: 600;
-            color: white;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .card:hover {
-            background-color: var(--card-hover);
-            transform: translateY(-5px);
-            border-color: rgba(255,255,255,0.1);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-        }
-
-        .card h2 {
-            font-size: 1.25rem;
-            margin: 0 0 0.5rem 0;
-            font-weight: 600;
-        }
-
-        .card p {
-            margin: 0;
-            color: #94a3b8;
-            font-size: 0.875rem;
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 4rem 5%; }
+        h1 { text-align: center; margin-bottom: 3rem; color: #38bdf8; font-size: 2.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .card { background: #1e293b; padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); }
+        .card h3 { margin-top: 0; color: #fff; }
+        .card p { color: #94a3b8; margin-bottom: 1.5rem; }
+        .card a { display: inline-block; padding: 0.75rem 1.5rem; background: #38bdf8; color: #000; text-decoration: none; border-radius: 8px; font-weight: bold; transition: opacity 0.2s; }
+        .card a:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1><span>Kunden</span>-Entwürfe</h1>
-        
-        <div class="grid">
-            <a href="malerfirma-zeiss/" class="card">
-                <div class="card-icon">🎨</div>
-                <h2>Malerfirma ZEISS</h2>
-                <p>Malerarbeiten & Fassadengestaltung</p>
-            </a>
-
-            <a href="raumdesign-bendlin/" class="card">
-                <div class="card-icon">🛋️</div>
-                <h2>Raumdesign Bendlin</h2>
-                <p>Raumgestaltung & Bodenbeläge</p>
-            </a>
-
-            <a href="holzgestaltung-buschbeck/" class="card">
-                <div class="card-icon">🪚</div>
-                <h2>Holzgestaltung Buschbeck</h2>
-                <p>Maßgefertigte Möbel & Innenausbau</p>
-            </a>
-
-            <a href="ewerker-elektrotechnik/" class="card">
-                <div class="card-icon">⚡</div>
-                <h2>E-werker Elektrotechnik</h2>
-                <p>Smart Home & Hausinstallationen</p>
-            </a>
-
-            <a href="polsterei-schlitter/" class="card">
-                <div class="card-icon">🪡</div>
-                <h2>Polsterei Schlitter</h2>
-                <p>Polstermöbel & Textilgestaltung</p>
-            </a>
-
-            <a href="fliesenleger-sengenberger/" class="card">
-                <div class="card-icon">🧱</div>
-                <h2>Fliesenleger Sengenberger</h2>
-                <p>Fliesen & Naturstein</p>
-            </a>
-            <a href="fliesenleger-seifert/" class="card">
-                <div class="card-icon">🛁</div>
-                <h2>Fliesenleger Seifert</h2>
-                <p>Badsanierung & Fliesen</p>
-            </a>
-            <a href="klempnerei-wagner/" class="card">
-                <div class="card-icon">🚰</div>
-                <h2>Klempnerei Wagner</h2>
-                <p>Sanitär & Heizung</p>
-            </a>
-            <a href="dachdecker-franke/" class="card">
-                <div class="card-icon">🏠</div>
-                <h2>Dachdeckermeister Franke</h2>
-                <p>Bedachungen & Spenglerei</p>
-            </a>
-            <a href="gartenbau-schmidt/" class="card">
-                <div class="card-icon">🌳</div>
-                <h2>Gartenbau Schmidt</h2>
-                <p>Landschaftsarchitektur & Pflege</p>
-            </a>
-            <a href="trockenbau-lehmann/" class="card">
-                <div class="card-icon">🏗️</div>
-                <h2>Trockenbau Lehmann</h2>
-                <p>Innenausbau & Akustik</p>
-            </a>
-            <a href="tischlerei-berger/" class="card">
-                <div class="card-icon">🪚</div>
-                <h2>Tischlerei Berger</h2>
-                <p>Fensterbau & Maßmöbel</p>
-            </a>
-            <a href="gebaeudereinigung-glanzstueck/" class="card">
-                <div class="card-icon">✨</div>
-                <h2>Gebäudereinigung Glanzstück</h2>
-                <p>Gewerbe- & Unterhaltsreinigung</p>
-            </a>
-            <a href="geruestbau-richter/" class="card">
-                <div class="card-icon">🪜</div>
-                <h2>Gerüstbau Richter</h2>
-                <p>Fassadengerüste & Sonderbau</p>
-            </a>
-            <a href="malerbetrieb-hoffmann/" class="card">
-                <div class="card-icon">🎨</div>
-                <h2>Malerbetrieb Hoffmann</h2>
-                <p>Kreative Wandgestaltung</p>
-            </a>
+    <h1>Aktuelle Kunden-Entwürfe (Dresden)</h1>
+    <div class="grid">
+        <div class="card">
+            <h3>Malerbetrieb Domsch</h3>
+            <p>Maler & Lackierer | Dresden</p>
+            <a href="malerbetrieb-domsch/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Rene Renner Malerbetrieb</h3>
+            <p>Malerhandwerk | Dresden-Jägerpark</p>
+            <a href="malerbetrieb-renner/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Torsten Bendlin RAUMDESIGN</h3>
+            <p>Raumausstattung & Design | Dresden</p>
+            <a href="raumdesign-bendlin/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Tischlerei Göbel</h3>
+            <p>Möbel- & Innenausbau | Dresden</p>
+            <a href="tischlerei-goebel/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Möbeltischlerei Tom Franz</h3>
+            <p>Holzhandwerk & Design | Dresden</p>
+            <a href="moebeltischlerei-franz/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Dachdecker Rocco Patrzynski</h3>
+            <p>Dach- & Fassadenbau | Dresden</p>
+            <a href="dachdecker-patrzynski/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Schoßau Sanitär & Heizung</h3>
+            <p>Sanitär- & Heizungstechnik | Dresden</p>
+            <a href="schossau-sanitaer/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Klempnermeister Torsten Lehmann</h3>
+            <p>Klempnerei & Installation | Dresden</p>
+            <a href="klempner-lehmann/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Elektro-Ortelt GmbH</h3>
+            <p>Elektroinstallation | Dresden</p>
+            <a href="elektro-ortelt/">Zum Entwurf &rarr;</a>
+        </div>
+        <div class="card">
+            <h3>Elektroinstallationen Schulz</h3>
+            <p>Elektrotechnik | Dresden</p>
+            <a href="elektro-schulz/">Zum Entwurf &rarr;</a>
         </div>
     </div>
 </body>
